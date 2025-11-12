@@ -1,0 +1,395 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #1b1b1b;
+  background: #f2f2f2;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background-color: #FAF8F0;
+  padding: 10px 5%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center; 
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  width: 100%;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #47392f;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 6px 10px; 
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #4C9A2A;
+  color: #fff;
+}
+
+/*MENU*/
+
+.menu-toggle {
+  display: none; 
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #47392f;
+  border-radius: 2px;
+}
+
+
+/*HERO*/
+.hero {
+  background: url(https://c02.purpledshub.com/uploads/sites/47/2018/09/Wheelchair-walks-772bcf5.jpg?w=1880&webp=1) center center / cover no-repeat;
+  color: #fff;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 5%;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  text-align: left;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.hero h1 span {
+  color: #4C9A2A;
+}
+
+.hero p {
+  font-size: 17.6px;
+  margin-top: 16px;
+  color: #e8e8e8;
+}
+
+.buttons {
+  margin-top: 32px;
+}
+
+.btn {
+  background: #4C9A2A;
+  color: #fff;
+  padding: 12.8px 25.6px;
+  border-radius: 32px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: #4C9A2A;
+}
+
+
+/*SOBRE*/
+main {
+  background: #fff;
+}
+
+.sobre {
+  padding: 80px 32px;
+  text-align: center;
+}
+
+.bg-light {
+  background: #f5f5f5;
+}
+
+.sobre h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+  color: #47392f;
+}
+
+.sobre p {
+  max-width: 600px;
+  margin: 0 auto 32px;
+  color: #47392f;
+}
+
+.cards-sobre {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.card {
+  background: #f9f9f9;
+  padding: 32px 24px;   
+  border-radius: 16px;
+  max-width: 300px;
+  min-height: 180px;    
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card h3 {
+  color: #4C9A2A;
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.card p {
+  color: #47392f;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+/*PERCURSO*/
+main {
+  background: #fff;
+}
+
+.percurso {
+  padding: 80px 32px;
+  text-align: center;
+}
+
+.fundo {
+  background: #f5f5f5;
+}
+
+.percurso h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+  color: #47392f;
+}
+
+.percurso p {
+  max-width: 600px;
+  margin: 0 auto 32px;
+  color: #47392f;
+}
+
+.cards-percurso {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.card-percurso {
+  background: #f9f9f9;
+  padding: 32px 24px;
+  border-radius: 16px;
+  max-width: 300px;
+  min-height: 180px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-percurso h3 {
+  color: #4C9A2A;
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.card-percurso p {
+  color: #47392f;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.card-percurso:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+/*Contacto*/
+main {
+  background: #fff;
+}
+
+.contacto {
+  padding: 80px 32px;
+  text-align: center;
+}
+
+.bg-light {
+  background: #f5f5f5;
+}
+
+.contacto h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+  color: #47392f;
+}
+
+.contacto p {
+  max-width: 600px;
+  margin: 0 auto 32px;
+  color: #47392f;
+}
+
+.contacto-form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-grupo {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #47392f;
+}
+
+input, textarea {
+  padding: 0.8rem 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  resize: none;
+  transition: border 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #81ba24;
+  outline: none;
+}
+
+/*FOOTER*/
+footer {
+  text-align: center;
+  padding: 32px;
+  background: #47392f;
+  color: #fff;
+  font-size: 14.4px;
+}
+
+/*Telemóvel*/
+
+@media (max-width: 768px) {
+  /*Header*/
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+    background: #fafff0;
+    position: absolute;
+    top: 70px;
+    right: 5%;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  nav.open .nav-links {
+    display: flex;
+  }
+
+  /*Hero*/
+  .hero h1 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .buttons a.btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .cards-sobre,
+  .cards-percurso {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .card-sobre,
+  .card-percurso {
+    max-width: 90%;
+  }
+}
